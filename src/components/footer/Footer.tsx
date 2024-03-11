@@ -13,7 +13,7 @@ const Footer = () => {
     },
     {
       image: <GitHubIcon style={{ color: "white", cursor: "pointer" }} />,
-      url: "https://www.linkedin.com/in/rushikesh-more-241406107",
+      url: "https://github.com/RushikeshMore11",
       title: "Github",
     },
     {
@@ -25,7 +25,7 @@ const Footer = () => {
   return (
     <div className="footer">
       {socialData.map((item) => (
-        <a href={item.url} title={item.title} target="_blanc">
+        <a href={item.url} title={item.title} target="_blanK" rel="noreferrer">
           {item.image}
         </a>
       ))}
