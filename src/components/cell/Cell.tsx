@@ -8,9 +8,7 @@ const Cell = ({ handleDragStart, item, handleDragEnd }: ICellProps) => {
       onDrag={() => handleDragStart(item.pos)}
       className={`flex-center cell ${item.isSelected && "selected-cell "}`}
       onDragOver={() => handleDragEnd(item.pos)}
-    >
-      {item.pos}
-    </div>
+    />
   );
 };
 
