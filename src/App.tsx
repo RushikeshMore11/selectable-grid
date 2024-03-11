@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Cell from "./components/cell/Cell";
+import Footer from "./components/footer/Footer";
 
 export interface IMatrix {
   pos: number[];
@@ -83,6 +84,7 @@ const App = () => {
 
   return (
     <div className="wrapper flex-center">
+      <h1>Selectable Grid</h1>
       <div className="grid">
         {twoDMatrix?.map((item, idx) => {
           return (
@@ -95,6 +97,7 @@ const App = () => {
           );
         })}
       </div>
+      <Footer />
     </div>
   );
 };
